@@ -80,4 +80,4 @@ The tool is licensed under the MIT license. See [LICENSE](LICENSE).
 Currently the tool is at v0.1.
 
 ### Credits
-The Research Team at RedHunt Labs would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project. 
+The Research Team at [RedHunt Labs](https://redhuntlabs.com) would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project. 

@@ -1,6 +1,8 @@
 # LogPew
 An automated, reliable scanner for the Log4Shell CVE-2021-44228 vulnerability.
 
+![image](https://user-images.githubusercontent.com/39941993/146184537-c6097017-1a95-445b-bede-c068912c7952.png)
+
 ### Usage
 Here the help usage:
 ```js
@@ -44,16 +46,22 @@ The tool makes use of Log4Shell tokens from [Canary Tokens](https://canarytokens
 
 #### Targets specification
 You can specify the targets in two modes:
-```
-./logpew.py -u 1.2.3.4:8080 -S alerts.mycallback.server
-./logpew.py -f targets.txt
-```
+- Scan a single URL:
+  ```
+  ./logpew.py -u 1.2.3.4:8080 ...
+  ```
+- Use a file to specify a list of targets:
+  ```
+  ./logpew.py -f targets.txt ...
+  ```
 
 #### Specifying notification channels
 There are two ways in which you can receive notification channels:
 - email (`--email`) -- service provided by Canarytokens.
 - webhook (`--webhook`) -- service provided by Canarytokens.
 - custom server (`--server`) -- you own custom DNS callback server.
+
+Once the tool finds a vulnerable server, notifications would be relayed back to your preferred communication channel.
 
 #### Sending requests
 - You can customize the HTTP methods using `--methods`.
@@ -65,3 +73,11 @@ There are two ways in which you can receive notification channels:
 #### Specifying delay
 
 Since a lot of HTTP requests are involved, it might be a cumbersome job for the remote host to handle the requests. The `--delay` parameter is here to help you with those cases. You can specify a delay value in seconds -- which will be used be used in between two subsequent requests to the same port on a server.
+
+### License & Version
+The tool is licensed under the MIT license. See [LICENSE](LICENSE).
+
+Currently the tool is at v0.1.
+
+### Credits
+The Research Team at RedHunt Labs would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project. 

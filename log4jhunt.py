@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os, sys, datetime, time
 import argparse, requests, urllib3, json
 
@@ -49,7 +52,7 @@ Content-Disposition: form-data; name="fmt"
 ------WebKitFormBoundaryTTwFOEyKMZZffBne
 Content-Disposition: form-data; name="memo"
 
-[LogPew] Log4Shell Token Triggered!
+[Log4JHunt] Log4Shell Token Triggered!
 ------WebKitFormBoundaryTTwFOEyKMZZffBne
 Content-Disposition: form-data; name="clonedsite"
 
@@ -164,11 +167,15 @@ def scan_host(host: str, headers: dict, params: dict):
 
 def main():
     print('''
-              L o g P e w
+          +--------------+
+              Log4JHunt
+          +--------------+
 
-    A Log4Shell (CVE-2021-44228) Scanner
+[+] Log4JHunt by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
+[+] Author: Pinaki Mondal (RHL Research Team)
+[+] Continuously Track Your Attack Surface using redhuntlabs.com/nvadr.
     ''')
-    parser = argparse.ArgumentParser(prog='logpew.py')
+    parser = argparse.ArgumentParser(prog='log4jhunt.py')
     parser.add_argument('-u', '--url', dest='url', type=str, help='URL to probe for the vulnerability.')
     parser.add_argument('-f', '--file', dest='file', type=str, help='Specify a file containing list of hosts to scan.')
     parser.add_argument('-d', '--delay', dest='delay', type=str, help='Delay in-between two concurrent requests.')
@@ -197,7 +204,7 @@ def main():
                 allhosts.extend(rf.read().splitlines())
 
     if len(allhosts) < 1:
-        print('[-] You have to supply at least a single host to scan!')
+        print('[-] You have to supply at least a single host to scan!\n')
         parser.print_help(sys.stdout)
         sys.exit(1)
 
@@ -233,7 +240,7 @@ def main():
     if len(xpayload) < 1:
         print('[-] No canarytokens or server given. Generating a new payload...')
         if not args.email or args.webhook:
-            print('[-] You have to supply either an email or a webhook if not mentioning a canarytoken or a custom server!')
+            print('[-] You have to supply either an email or a webhook if not mentioning a canarytoken or a custom server!\n')
             parser.print_help()
             sys.exit(1)
         ctoken, authtoken = get_token(args.email, args.webhook)
@@ -259,7 +266,7 @@ def main():
         print('[+] Visit "%s" for viewing callbacks!' %
             f'https://canarytokens.org/history?token={ctoken}&auth={authtoken}')
     print('[+] Total time taken: %ss' % (tfin-tnow).total_seconds())
-    print('[*] Done. Exiting...')
+    print('[*] Done. Log4JHunt is exiting...')
 
 if __name__ == '__main__':
     main()

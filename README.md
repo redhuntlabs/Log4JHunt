@@ -1,4 +1,4 @@
-# LogPew
+# Log4JHunt
 An automated, reliable scanner for the Log4Shell CVE-2021-44228 vulnerability.
 
 ![image](https://user-images.githubusercontent.com/39941993/146184537-c6097017-1a95-445b-bede-c068912c7952.png)
@@ -6,14 +6,19 @@ An automated, reliable scanner for the Log4Shell CVE-2021-44228 vulnerability.
 ### Usage
 Here the help usage:
 ```js
-$ python3 logpew.py --help
+$ python3 log4jhunt.py
 
-              L o g P e w
+          +--------------+
+              Log4JHunt
+          +--------------+
 
-    A Log4Shell (CVE-2021-44228) Scanner
+[+] Log4jHunt by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
+[+] Author: Pinaki Mondal (RHL Research Team)
+[+] Continuously Track Your Attack Surface using redhuntlabs.com/nvadr.
 
 [-] You have to supply at least a single host to scan!
-usage: logpew.py [-h] [-u URL] [-f FILE] [-d DELAY] [-t TIMEOUT] [-T TOKEN] [-E EMAIL] [-W WEBHOOK] [-S SERVER] [-ua USERAGENT] [-m METHOD] [-H HEADERS] [-p PROXY]
+
+usage: log4jhunt.py [-h] [-u URL] [-f FILE] [-d DELAY] [-t TIMEOUT] [-T TOKEN] [-E EMAIL] [-W WEBHOOK] [-S SERVER] [-ua USERAGENT] [-m METHOD] [-H HEADERS] [-p PROXY]
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -48,11 +53,11 @@ The tool makes use of Log4Shell tokens from [Canary Tokens](https://canarytokens
 You can specify the targets in two modes:
 - Scan a single URL:
   ```
-  ./logpew.py -u 1.2.3.4:8080 ...
+  ./log4jhunt.py -u 1.2.3.4:8080 ...
   ```
 - Use a file to specify a list of targets:
   ```
-  ./logpew.py -f targets.txt ...
+  ./log4jhunt.py -f targets.txt ...
   ```
 
 #### Specifying notification channels
@@ -80,4 +85,4 @@ The tool is licensed under the MIT license. See [LICENSE](LICENSE).
 Currently the tool is at v0.1.
 
 ### Credits
-The Research Team at [RedHunt Labs](https://redhuntlabs.com) would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project. 
+The Research Team at [RedHunt Labs](https://redhuntlabs.com) would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project.

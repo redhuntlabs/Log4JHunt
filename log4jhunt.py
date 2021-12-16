@@ -1,6 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#:-:--:--:--:--:--#
+#    Log4JHunt    #
+#:-:--:--:--:--:--#
+
+# Author: Pinaki Mondal (@0xInfection)
+# This file is a part of the Log4JHunt tool meant for testing of
+# hosts vulnerable to the Log4Shell vulnerability.
+
 import os, sys, datetime, time
 import argparse, requests, urllib3, json
 

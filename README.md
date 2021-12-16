@@ -1,7 +1,7 @@
 # Log4JHunt
 An automated, reliable scanner for the Log4Shell CVE-2021-44228 vulnerability.
 
-![image](https://user-images.githubusercontent.com/39941993/146184537-c6097017-1a95-445b-bede-c068912c7952.png)
+![image](demo.gif)
 
 ### Usage
 Here the help usage:
@@ -48,6 +48,8 @@ optional arguments:
 
 #### Getting a token
 The tool makes use of Log4Shell tokens from [Canary Tokens](https://canarytokens.org). The tool has capability to automatically generate tokens, if the values of the token (`--token`) and server (`--server`) are empty.
+
+Once the token is generated, the token and the auth value are written to a file called `canary-token.json`.
 
 #### Targets specification
 You can specify the targets in two modes:

@@ -92,4 +92,4 @@ Currently the tool is at v0.1.
 ### Credits
 The Research Team at [RedHunt Labs](https://redhuntlabs.com) would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project.
 
-[To know more about our Attack Surface Management platform #ASM, check out NVADR](https://redhuntlabs.com/nvadr).
+**[`To know more about our Attack Surface Management platform, check out NVADR.`](https://redhuntlabs.com/nvadr)**

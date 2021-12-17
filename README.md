@@ -1,7 +1,9 @@
 # Log4JHunt
 An automated, reliable scanner for the Log4Shell CVE-2021-44228 vulnerability.
 
-https://user-images.githubusercontent.com/39941993/146377497-a821f222-e292-4de7-8596-bded155dc787.mp4
+Video demo:
+
+[![video](https://user-images.githubusercontent.com/39941993/146507751-b8528c51-9d11-489c-a940-6cfc8241eeb8.png)](https://www.youtube.com/watch?v=7eRNzkbYWf8)
 
 ### Usage
 Here the help usage:

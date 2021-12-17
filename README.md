@@ -14,7 +14,7 @@ $ python3 log4jhunt.py
 
 [+] Log4jHunt by RedHunt Labs - A Modern Attack Surface (ASM) Management Company
 [+] Author: Pinaki Mondal (RHL Research Team)
-[+] Continuously Track Your Attack Surface using redhuntlabs.com/nvadr.
+[+] Continuously Track Your Attack Surface using https://redhuntlabs.com/nvadr.
 
 [-] You have to supply at least a single host to scan!
 
@@ -81,6 +81,9 @@ Once the tool finds a vulnerable server, notifications would be relayed back to 
 
 Since a lot of HTTP requests are involved, it might be a cumbersome job for the remote host to handle the requests. The `--delay` parameter is here to help you with those cases. You can specify a delay value in seconds -- which will be used be used in between two subsequent requests to the same port on a server.
 
+#### More details around the Log4J
+We have covered more details around Log4j Vulnerability in our [Blog](https://redhuntlabs.com/blog/log4j-vulnerability-things-you-should-know.html).
+
 ### License & Version
 The tool is licensed under the MIT license. See [LICENSE](LICENSE).
 
@@ -88,3 +91,5 @@ Currently the tool is at v0.1.
 
 ### Credits
 The Research Team at [RedHunt Labs](https://redhuntlabs.com) would like to thank [Thinkst Canary](https://canary.tools) for the awesome [Canary Token](https://canarytokens.org) Project.
+
+(To know more about our Attack Surface Management platform #ASM, check out NVADR)[https://redhuntlabs.com/nvadr].
